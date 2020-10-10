@@ -668,7 +668,7 @@ header {
   visibility: visible;
   pointer-events: auto;
  
-  transition: all 2500ms var(--timing-function);
+  transition: all 250ms var(--timing-function);
 
   background: rgba(0, 0, 0, 0.2);
 }
@@ -684,7 +684,7 @@ header {
   top: 50%;
   left: 50%;
 
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transform: translate(-50%,-50%) scale(1);
 
   width: 528px;
