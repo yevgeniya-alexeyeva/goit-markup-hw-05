@@ -58,6 +58,12 @@ img {
   background-color: var(--accent-color);
   border: none;
 }
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 
 /* ==Header==*/
 header {
@@ -658,13 +664,15 @@ header {
   right: 0;
   bottom: 0;
 
-  background: rgba(0, 0, 0, 0.2);
-  
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+ 
+  transition: all 2500ms var(--timing-function);
+
+  background: rgba(0, 0, 0, 0.2);
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -675,24 +683,19 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
 
-  transition-property: scale;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  
+  transition-duration: 2500ms;
+  transform: translate(-50%,-50%) scale(1);
+
   width: 528px;
   height: 581px;
   border-radius: 4px;
 
   background-color: var(--hero-color);
 }
-
 .backdrop.is-hidden .modal {
-  transform: scale(0.1);
+  transform: translate(-50%,-50%) scale(1.5);
 }
-
-
 .close-button {
   position: absolute;
   top: 8px;
