@@ -109,9 +109,8 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-
+  transition: color 250ms var(--timing-function);
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -150,8 +149,7 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: color 250ms var(--timing-function);
 
   font-weight: 500;
   font-size: 14px;
@@ -443,8 +441,7 @@ header {
   margin-top: 16px;
 }
 .social-icon {
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 
   width: 20px;
   height: 20px;
@@ -456,8 +453,8 @@ header {
   align-items: center;
   justify-content: center;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+
 
   width: 44px;
   height: 44px;
@@ -496,8 +493,8 @@ header {
   align-items: center;
   justify-content: center;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: border-color 250ms var(--timing-function);
+
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -511,9 +508,7 @@ header {
   border-color: var(--accent-color);
 }
 .client-icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 
   fill: var(--icon-color);
 }
@@ -543,6 +538,7 @@ header {
 .filter-button {
   padding: 6px 22px;
 
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
   font-weight: 500;
@@ -606,8 +602,7 @@ header {
   left: 0;
   right: 0;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 
   transform: translateY(100%);
 
@@ -625,9 +620,7 @@ header {
 }
 .work-list-link {
   display: block;
-
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
 }
 .work-list-link:hover,
 .work-list-link:focus > .work-list-item {
